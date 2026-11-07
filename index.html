@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080A0F">
+  <meta name="description" content="WAN HU 67 — Bitácora de misión de Rocket Tec, Tecnológico de Monterrey, Campus Sinaloa.">
+  <title>WAN HU 67 — Bitácora de misión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stars stars-a" aria-hidden="true"></div><div class="stars stars-b" aria-hidden="true"></div>
+  <div class="planet planet-a" aria-hidden="true"></div><div class="planet planet-b" aria-hidden="true"></div>
+  <div class="planet planet-c" aria-hidden="true"></div><div class="planet planet-d" aria-hidden="true"></div>
+  <div class="planet planet-e" aria-hidden="true"></div>
+  <header class="header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="WAN HU 67, inicio"><img src="assets/wan-hu-67-emblema.png" alt=""/><span><b>WAN HU <i>67</i></b><small>ROCKET TEC · SINALOA</small></span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú de secciones">
+        <span class="menu-lines" aria-hidden="true"><i></i><i></i></span>
+        <b data-i18n="menuLabel">SECCIONES</b><span class="menu-chevron" aria-hidden="true">⌄</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#mision" data-i18n="navMission">Misión</a><a href="#historia" data-i18n="navHistory">Historia</a><a href="#fisica" data-i18n="navPhysics">Física</a><a href="#ingenieria" data-i18n="navEngineering">Ingeniería</a><a href="#metricas" data-i18n="navMetrics">Métricas</a><a href="#equipo" data-i18n="navCrew">Equipo</a>
+      </div>
+      <button class="lang-button" id="lang-button" type="button" aria-label="Switch to English"><span>文</span><b id="lang-label">EN</b></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="mision">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><i class="live-dot"></i><span data-i18n="heroTag">BITÁCORA DE MISIÓN · RETO F1025B</span></p>
+          <p class="hanzi-kicker" lang="zh">万户 · 探索始于好奇</p>
+          <h1 data-i18n-html="heroTitle">Del mito al método.<br><em>La próxima misión</em><br>comienza aquí.</h1>
+          <p class="hero-description" data-i18n="heroDescription">WAN HU 67 es un proyecto aeroespacial de Rocket Tec que integra experimentación, modelado físico y análisis de vuelo. Una misión para convertir preguntas en datos y datos en decisiones de ingeniería.</p>
+          <div class="hero-actions"><a class="button primary" href="#ingenieria"><span data-i18n="heroCta1">Explorar la ingeniería</span> ↗</a><a class="button secondary" href="#historia" data-i18n="heroCta2">Conocer la historia</a></div>
+          <div class="hero-meta"><div><small data-i18n="statusLabel">ESTADO DE MISIÓN</small><b><i class="live-dot"></i><span data-i18n="statusValue">EN DESARROLLO</span></b></div><span class="meta-rule"></span><div><small data-i18n="editionLabel">EDICIÓN</small><b>2026</b></div><span class="coordinates">24°48′ N / 107°23′ O</span></div>
+        </div>
+        <div class="hero-art">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit orbit-three"></span>
+          <span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">✦</span>
+          <span class="orbit-note note-one">MISSION 067</span><span class="orbit-note note-two" lang="zh">万户号</span>
+          <img class="hero-logo" src="assets/wan-hu-67-emblema.png" alt="Emblema oficial de WAN HU 67 con un cohete, la luna y un dragón rojo">
+          <div class="logo-caption"><i></i> ROCKET TEC <b>×</b> WAN HU 67 <i></i></div>
+          <small class="art-caption">FIG. 01 · <span data-i18n="artCaption">IDENTIDAD OFICIAL DE MISIÓN</span></small>
+        </div>
+      </div>
+      <div class="container countdown-panel">
+        <div class="countdown-title"><p class="eyebrow"><span class="red-line"></span><span data-i18n="countTag">T-MENOS · CUENTA REGRESIVA</span></p><h2 data-i18n="countTitle">Próxima ventana de lanzamiento</h2><small id="countdown-status" data-i18n="countStatus">FECHA POR CONFIRMAR</small></div>
+        <div class="countdown" id="countdown" aria-live="polite"><div><b id="days">--</b><small data-i18n="days">DÍAS</small></div><span>:</span><div><b id="hours">--</b><small data-i18n="hours">HORAS</small></div><span>:</span><div><b id="minutes">--</b><small data-i18n="minutes">MINUTOS</small></div><span>:</span><div><b id="seconds">--</b><small data-i18n="seconds">SEGUNDOS</small></div></div>
+        <p class="countdown-note" id="countdown-note" data-i18n="countNote">La fecha oficial aparecerá cuando el equipo confirme la ventana de lanzamiento.</p>
+      </div>
+      <div class="container hero-footer"><span>TECNOLOGÍA <i>·</i> EXPERIMENTACIÓN <i>·</i> VUELO</span><a href="#historia" data-i18n="scroll">DESLIZA PARA EXPLORAR ↓</a></div>
+    </section>
+
+    <section class="intro section" id="proyecto"><div class="container intro-grid">
+      <p class="section-index">01 / <span data-i18n="purposeIndex">PROPÓSITO</span></p>
+      <div><p class="eyebrow">TEC DE MONTERREY <i>·</i> CAMPUS SINALOA</p><h2 data-i18n-html="introTitle">Una misión construida<br>con <em>preguntas reales.</em></h2></div>
+      <div class="intro-copy"><p data-i18n="introCopy">El reto consiste en diseñar, observar y comprender el comportamiento de un sistema aeroespacial. Cada prueba aporta evidencia; cada modelo ayuda a interpretar lo que sucede durante el vuelo.</p><a class="text-link" href="#fisica"><span data-i18n="physicsLink">Entender la física</span> ↗</a></div>
+    </div></section>
+
+    <section class="story section" id="historia"><div class="container">
+      <div class="section-heading"><div><p class="section-index">02 / <span data-i18n="storyIndex">ORIGEN DEL NOMBRE</span></p><h2 data-i18n-html="storyTitle">Una leyenda que<br><em>miró hacia arriba.</em></h2></div><p class="section-aside" data-i18n="storyAside">INSPIRACIÓN · CHINA, DINASTÍA MING</p></div>
+      <div class="story-grid"><div class="hanzi-card"><span class="hanzi" lang="zh">万户</span><b>WÀN HÙ</b><i></i><p data-i18n="hanziText">Nombre asociado a una antigua leyenda china sobre el sueño de volar hacia el cielo.</p><small lang="zh">火箭 · 探索</small></div>
+        <div class="story-copy"><p class="red-kicker" data-i18n="whoWan">¿QUIÉN FUE WAN HU?</p><p data-i18n="storyP1">Wan Hu es el protagonista de una leyenda popular que suele situarse en la China de la dinastía Ming. La narración cuenta que imaginó una silla voladora impulsada por cohetes y acompañada por cometas.</p><p data-i18n="storyP2">La historia no está confirmada como un acontecimiento histórico. La NASA la presenta como una leyenda. Para WAN HU 67, su valor está en el símbolo: la curiosidad humana por explorar, experimentar y mirar más allá de lo conocido.</p>
+          <blockquote><span>“</span><p data-i18n="storyQuote">No heredamos una hazaña comprobada; retomamos una idea poderosa: imaginar cómo llegar más lejos.</p></blockquote>
+          <a class="source-link" href="https://www.nasa.gov/wp-content/uploads/2012/07/rockets-educator-guide-20.pdf" target="_blank" rel="noopener noreferrer" data-i18n="nasaStory">Consultar guía educativa de NASA ↗</a>
+        </div></div>
+    </div></section>
+
+    <section class="physics section" id="fisica"><div class="container">
+      <div class="section-heading"><div><p class="section-index">03 / <span data-i18n="physicsIndex">FENÓMENOS FÍSICOS</span></p><h2 data-i18n-html="physicsTitle">La física detrás<br>del <em>vuelo.</em></h2></div><p class="section-aside" data-i18n="physicsAside">FUERZAS · MOVIMIENTO · AERODINÁMICA</p></div>
+      <p class="section-lede" data-i18n="physicsLede">El vuelo resulta de fuerzas que cambian con el tiempo. Comprenderlas permite interpretar la trayectoria, estimar el apogeo y evaluar el comportamiento del vehículo.</p>
+      <div class="physics-grid">
+        <article class="physics-card"><span class="physics-symbol">↑</span><small>PHYSICS / 01</small><h3 data-i18n="thrustTitle">Empuje</h3><p data-i18n="thrustText">Fuerza que impulsa el cohete al expulsar masa en sentido contrario. Se relaciona con la tercera ley de Newton: acción y reacción.</p><b class="equation">ΣF = m · a</b></article>
+        <article class="physics-card"><span class="physics-symbol">↓</span><small>PHYSICS / 02</small><h3 data-i18n="gravityTitle">Gravedad y peso</h3><p data-i18n="gravityText">La gravedad atrae el vehículo hacia la Tierra. Su efecto compite con el empuje durante el ascenso.</p><b class="equation">P = m · g</b></article>
+        <article class="physics-card"><span class="physics-symbol">≋</span><small>PHYSICS / 03</small><h3 data-i18n="dragTitle">Resistencia aerodinámica</h3><p data-i18n="dragText">El aire se opone al movimiento. La forma, el área frontal, la velocidad y la densidad del aire influyen en su magnitud.</p><b class="equation">Fᵈ ∝ ρ · v²</b></article>
+        <article class="physics-card"><span class="physics-symbol">↗</span><small>PHYSICS / 04</small><h3 data-i18n="stabilityTitle">Sustentación y estabilidad</h3><p data-i18n="stabilityText">Las fuerzas aerodinámicas laterales y la orientación afectan la trayectoria. La estabilidad ayuda a mantener una actitud de vuelo controlada.</p><b class="equation" data-i18n="stabilityEquation">FUERZAS → TRAYECTORIA</b></article>
+        <article class="physics-card wide-card"><span class="physics-symbol">⌃</span><small>PHYSICS / 05</small><h3 data-i18n="apogeeTitle">Apogeo y descenso</h3><p data-i18n="apogeeText">El apogeo es el punto de mayor altitud. Durante el descenso, el sistema de recuperación aumenta la resistencia del aire y reduce la velocidad vertical.</p><b class="equation">vᵧ ≈ 0 · APOGEO</b></article>
+      </div>
+      <p class="reference"><b data-i18n="technicalRef">REFERENCIA TÉCNICA</b> <a href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-rocket-forces/" target="_blank" rel="noopener noreferrer">NASA Glenn — Four Forces on a Rocket ↗</a></p>
+    </div></section>
+
+    <section class="engineering section" id="ingenieria"><div class="container">
+      <div class="section-heading"><div><p class="section-index">04 / <span data-i18n="engineeringIndex">INGENIERÍA APLICADA</span></p><h2 data-i18n-html="engineeringTitle">De la evidencia<br>a la <em>predicción.</em></h2></div><p class="section-aside" data-i18n="engineeringAside">MÉTODO · SIMULACIÓN · VALIDACIÓN</p></div>
+      <div class="phases">
+        <article class="phase"><div class="phase-top"><b>FASE 01</b><span data-i18n="empiricalTag">EXPERIMENTACIÓN</span></div><div class="phase-drawing"><svg viewBox="0 0 420 140" aria-hidden="true"><path d="M70 35Q210 -20 350 35L210 122Z" fill="rgba(200,16,46,.13)" stroke="#C8102E" stroke-width="2"/><path d="M70 35L210 122L350 35M140 22L210 122L280 22" stroke="#F5F1E6" stroke-dasharray="5 6" fill="none"/><path d="M210 122v12" stroke="#F5F1E6" stroke-width="2"/></svg></div><p class="red-kicker" data-i18n="empiricalLabel">INGENIERÍA EMPÍRICA</p><h3 data-i18n-html="empiricalTitle">Diseñar para<br><em>descubrir.</em></h3><p data-i18n="empiricalText">La primera fase parte de la observación y la experimentación: pruebas de paracaídas, registro de resultados y ajustes sustentados en evidencia.</p><ul><li data-i18n="empiricalOne">Pruebas de paracaídas</li><li data-i18n="empiricalTwo">Observación y ensayo</li><li data-i18n="empiricalThree">Iteración y aprendizaje</li></ul><footer><span data-i18n="focus">ENFOQUE</span><b data-i18n="empiricalFooter">VALIDACIÓN EXPERIMENTAL</b></footer></article>
+        <article class="phase predictive"><div class="phase-top"><b>FASE 02</b><span data-i18n="predictiveTag">MODELADO</span></div><div class="phase-drawing"><svg viewBox="0 0 420 140" aria-hidden="true"><g fill="none" stroke="#C8102E" stroke-width="1.5"><path d="M10 115Q75 5 140 115T270 115T400 115"/><path d="M10 90Q75 -20 140 90T270 90T400 90" opacity=".5"/><path d="M10 138Q75 28 140 138T270 138T400 138" opacity=".5"/></g><path d="M210 16l12 25h-24z" fill="#F5F1E6"/><path d="M210 41v82" stroke="#F5F1E6" stroke-dasharray="4 5"/><circle cx="210" cy="123" r="6" fill="#C8102E" stroke="#F5F1E6" stroke-width="2"/></svg></div><p class="red-kicker" data-i18n="predictiveLabel">INGENIERÍA PREDICTIVA</p><h3 data-i18n-html="predictiveTitle">Diseñar para<br><em>predecir.</em></h3><p data-i18n="predictiveText">La segunda fase integra modelos físicos y herramientas de simulación para estimar el desempeño y contrastar predicciones con observaciones.</p><ul><li data-i18n="predictiveOne">Modelos físicos en MATLAB</li><li data-i18n="predictiveTwo">SolidWorks Flow Simulation</li><li data-i18n="predictiveThree">Predicción del apogeo</li></ul><footer><span data-i18n="focus">ENFOQUE</span><b data-i18n="predictiveFooter">ANÁLISIS Y PREDICCIÓN</b></footer></article>
+      </div>
+      <div class="tools-grid"><article><small>01 / MATLAB</small><b data-i18n="matlabTitle">Modelado matemático</b><p data-i18n="matlabText">Representar el movimiento y analizar escenarios con variables físicas.</p></article><article><small>02 / SOLIDWORKS</small><b data-i18n="solidTitle">Simulación de flujo</b><p data-i18n="solidText">Visualizar el comportamiento del aire alrededor de la geometría diseñada.</p></article><article><small>03 / SISTEMAS</small><b data-i18n="systemsTitle">Integración de misión</b><p data-i18n="systemsText">Conectar diseño, pruebas, recuperación, registro y evaluación.</p></article></div>
+    </div></section>
+
+    <section class="metrics section" id="metricas"><div class="container">
+      <div class="section-heading"><div><p class="section-index">05 / <span data-i18n="metricsIndex">MÉTRICAS DE LANZAMIENTO</span></p><h2 data-i18n-html="metricsTitle">Cada vuelo deja<br><em>una huella de datos.</em></h2></div><p class="section-aside" data-i18n="metricsAside">INDICADORES · RESULTADOS POR REGISTRAR</p></div>
+      <p class="section-lede" data-i18n="metricsLede">Estos indicadores forman la ficha de evaluación de la misión. Los valores se actualizarán cuando existan mediciones verificadas del ensayo o del lanzamiento.</p>
+      <div class="metrics-grid">
+        <article><small>ALT / 01</small><strong>— —</strong><b data-i18n="altitude">Altitud máxima</b><i data-i18n="toMeasure">POR MEDIR</i><span>m</span></article>
+        <article><small>VEL / 02</small><strong>— —</strong><b data-i18n="velocity">Velocidad máxima</b><i data-i18n="toMeasure">POR MEDIR</i><span>m/s</span></article>
+        <article><small>ACC / 03</small><strong>— —</strong><b data-i18n="acceleration">Aceleración máxima</b><i data-i18n="toMeasure">POR MEDIR</i><span>m/s²</span></article>
+        <article><small>T↑ / 04</small><strong>— —</strong><b data-i18n="ascentTime">Tiempo de ascenso</b><i data-i18n="toMeasure">POR MEDIR</i><span>s</span></article>
+        <article><small>TΣ / 05</small><strong>— —</strong><b data-i18n="flightTime">Duración total del vuelo</b><i data-i18n="toMeasure">POR MEDIR</i><span>s</span></article>
+        <article><small>REC / 06</small><strong>— —</strong><b data-i18n="recovery">Distancia de recuperación</b><i data-i18n="toMeasure">POR MEDIR</i><span>m</span></article>
+      </div>
+      <p class="metric-warning"><b>!</b><span data-i18n="metricWarning">No se presentan cifras estimadas como mediciones reales. La comparación entre el modelo y el vuelo se añadirá al contar con datos del proyecto.</span></p>
+    </div></section>
+
+    <section class="outcomes section" id="resultados"><div class="container outcomes-grid"><div><p class="section-index">06 / <span data-i18n="outcomesIndex">RESULTADOS ESPERADOS</span></p><h2 data-i18n-html="outcomesTitle">Una misión.<br><em>Aprendizajes medibles.</em></h2><p data-i18n="outcomesIntro">El éxito académico también está en documentar el proceso, entender las diferencias y explicar con evidencia qué aprendimos.</p></div><div class="outcome-list">
+      <article><span>01</span><div><b data-i18n="outcome1Title">Caracterización del vuelo</b><p data-i18n="outcome1Text">Construir un registro de los indicadores relevantes de la trayectoria.</p></div><i>↗</i></article>
+      <article><span>02</span><div><b data-i18n="outcome2Title">Modelo contrastable</b><p data-i18n="outcome2Text">Comparar predicciones físicas con las observaciones disponibles.</p></div><i>↗</i></article>
+      <article><span>03</span><div><b data-i18n="outcome3Title">Evaluación de recuperación</b><p data-i18n="outcome3Text">Analizar el comportamiento del descenso y la recuperación del vehículo.</p></div><i>↗</i></article>
+      <article><span>04</span><div><b data-i18n="outcome4Title">Documentación reproducible</b><p data-i18n="outcome4Text">Conservar decisiones, supuestos, resultados y oportunidades de mejora.</p></div><i>↗</i></article>
+    </div></div></section>
+
+    <section class="identity section" id="identidad"><div class="container identity-grid"><div><p class="section-index">07 / <span data-i18n="identityIndex">IDENTIDAD VISUAL</span></p><h2 data-i18n-html="identityTitle">El código visual<br>de <em>WAN HU 67.</em></h2><p data-i18n="identityText">El emblema y el logotipo oficiales se conservan como fueron proporcionados: cohete, luna y dragón son el sello gráfico de la misión.</p></div><div class="identity-board"><img src="assets/wan-hu-67-horizontal.png" alt="Logotipo horizontal oficial WAN HU 67 · Sinaloa 2026"><div class="palette"><div><i style="--swatch:#080A0F"></i><b>AZUL PROFUNDO</b><small>#080A0F</small></div><div><i style="--swatch:#C8102E"></i><b>ROJO DRAGÓN</b><small>#C8102E</small></div><div><i style="--swatch:#F5F1E6"></i><b>CREMA LUNAR</b><small>#F5F1E6</small></div><div><i style="--swatch:#A0A5B5"></i><b>GRIS ORBITAL</b><small>#A0A5B5</small></div></div></div></div></section>
+
+    <section class="crew section" id="equipo"><div class="container"><div class="section-heading"><div><p class="section-index">08 / <span data-i18n="crewIndex">TRIPULACIÓN</span></p><h2 data-i18n-html="crewTitle">Cinco personas.<br><em>Un mismo horizonte.</em></h2></div><p class="section-aside">ROCKET TEC · CAMPUS SINALOA</p></div><p class="crew-intro" data-i18n="crewIntro">Propuesta inicial de distribución de responsabilidades. Los roles pueden ajustarse para reflejar las tareas y acuerdos reales del equipo.</p>
+      <div class="crew-grid">
+        <article class="crew-card"><div class="crew-top"><span>TRIPULANTE / 01</span><b lang="zh">协调</b></div><div class="avatar avatar-a">AL</div><h3>Adrián Ley<br>Calderón</h3><b class="role" data-i18n="roleAdrian">Diseño CAD y simulación</b><p data-i18n="detailAdrian">Desarrollo del diseño tridimensional y análisis del comportamiento aerodinámico mediante herramientas de simulación.</p><footer><span data-i18n="proposedRole">ROL PROPUESTO</span><span>01 / 05</span></footer></article>
+        <article class="crew-card"><div class="crew-top"><span>TRIPULANTE / 02</span><b lang="zh">建模</b></div><div class="avatar avatar-b">JM</div><h3>Juan Manuel<br>Pérez Osuna</h3><b class="role" data-i18n="roleJuan">Modelado matemático</b><p data-i18n="detailJuan">Desarrollo y análisis de modelos físicos y escenarios de movimiento en MATLAB.</p><footer><span data-i18n="proposedRole">ROL PROPUESTO</span><span>02 / 05</span></footer></article>
+        <article class="crew-card featured"><div class="crew-top"><span>TRIPULANTE / 03</span><b lang="zh">设计</b></div><div class="avatar avatar-c">SL</div><h3>Santiago Lugo<br>Martínez</h3><b class="role" data-i18n="roleSantiago">Integración de misión y pruebas</b><p data-i18n="detailSantiago">Coordinación de la integración entre subsistemas, seguimiento de pruebas y verificación de avances.</p><footer><span data-i18n="proposedRole">ROL PROPUESTO</span><span>03 / 05</span></footer></article>
+        <article class="crew-card"><div class="crew-top"><span>TRIPULANTE / 04</span><b lang="zh">测量</b></div><div class="avatar avatar-d">LD</div><h3>Luis Daniel<br>Maldonado Vargas</h3><b class="role" data-i18n="roleLuis">Registro y métricas</b><p data-i18n="detailLuis">Organización de mediciones, bitácora de pruebas y análisis de indicadores de vuelo.</p><footer><span data-i18n="proposedRole">ROL PROPUESTO</span><span>04 / 05</span></footer></article>
+        <article class="crew-card"><div class="crew-top"><span>TRIPULANTE / 05</span><b lang="zh">记录</b></div><div class="avatar avatar-e">KV</div><h3>Karely<br>Valencia</h3><b class="role" data-i18n="roleKarely">Documentación y comunicación</b><p data-i18n="detailKarely">Integración de documentación técnica, presentación de resultados y comunicación visual.</p><footer><span data-i18n="proposedRole">ROL PROPUESTO</span><span>05 / 05</span></footer></article>
+      </div><p class="crew-note"><b>✳</b> <span data-i18n="crewNote">Los roles son una propuesta editable, no una asignación oficial confirmada.</span></p>
+    </div></section>
+
+    <section class="final"><div class="container"><p class="eyebrow"><i class="live-dot"></i><span data-i18n="finalTag">FIN DE REGISTRO · MISIÓN 2026</span></p><h2 data-i18n-html="finalTitle">La curiosidad es<br>nuestro <em>punto de partida.</em></h2><a class="button primary" href="#inicio"><span data-i18n="backTop">Volver al inicio</span> ↑</a><p lang="zh">仰望星空 · 脚踏实地</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-top"><a class="footer-brand" href="#inicio"><img src="assets/wan-hu-67-emblema.png" alt=""><span>WAN HU <b>67</b><small>ROCKET TEC · SINALOA</small></span></a><p data-i18n-html="schoolFooter">Tecnológico de Monterrey<br>Campus Sinaloa · Reto F1025B</p><p data-i18n="motto">DISEÑAR · PROBAR · COMPRENDER</p></div><div class="container footer-bottom"><span>© 2026 WAN HU 67 · <span data-i18n="footerLog">BITÁCORA DE MISIÓN</span></span><span lang="zh">万户 · SINALOA, MÉXICO</span><a href="#inicio" data-i18n="footerTop">REGRESAR ↑</a></div></footer>
+  <script src="script.js"></script>
+</body></html>
